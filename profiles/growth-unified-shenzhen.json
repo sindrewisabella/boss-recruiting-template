@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "screeningProfile": "growth-unified.json",
+  "jobBindings": [
+    {
+      "jobId": "example-growth-1",
+      "label": "增长工程师（SEO & 广告方向） _ 深圳 20-40K"
+    }
+  ]
+}

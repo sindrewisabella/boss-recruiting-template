@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {assertJob,cardFacts} from './boss_live.mjs';
+const binding={jobId:'stable-job-A',label:'增长工程师 _ 深圳 20-40K'};
+assert.throws(()=>assertJob(binding,{jobId:'stable-job-B',label:binding.label}),/不符/);
+assert.throws(()=>assertJob(binding,{jobId:binding.jobId,label:'增长工程师 _ 厦门 20-40K'}),/不符/);
+assertJob(binding,{jobId:binding.jobId,label:'增长工程师  _ 深圳  20-40K'});
+const facts=cardFacts({base:'31岁 8年 硕士 离职-随时到岗',professionalText:'做过 AI 界面'},'2026-10-09T15:00:00+08:00');
+assert.equal(facts.education.value,'硕士');
+assert.equal(facts.totalWorkYears.value,8);
+for(const field of ['firstDegree','relevantDevelopmentYears','independentDeliveryVerified','realAIApplicationVerified'])assert.equal(facts[field],undefined);
+assert.equal(cardFacts({base:'应届 博士',professionalText:''},'2026-10-09T15:00:00+08:00').totalWorkYears,undefined);
+console.log('PASS: 同名不同 ID、异地岗位停止；学历／年限不越界推断；AI关键词不证明AI项目。');

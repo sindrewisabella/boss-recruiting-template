@@ -1,0 +1,30 @@
+[
+  {
+    "candidateKey": "synthetic-A",
+    "facts": {
+      "firstDegree": {"value": "本科", "evidence": "合成完整教育序列：首次高等教育为本科", "source": "synthetic", "observedAt": "2026-10-09T14:00:00+08:00"},
+      "visibleProfessionalText": {"value": "运维工程师，负责服务维护", "evidence": "合成候选资料职业描述", "source": "synthetic", "observedAt": "2026-10-09T14:00:00+08:00"}
+    }
+  },
+  {
+    "candidateKey": "synthetic-B",
+    "facts": {
+      "highestDegree": {"value": "硕士", "evidence": "仅显示合成最高学历", "source": "synthetic", "observedAt": "2026-10-09T14:00:00+08:00"},
+      "visibleProfessionalText": {"value": "运维工程师", "evidence": "合成候选资料职业描述", "source": "synthetic", "observedAt": "2026-10-09T14:00:00+08:00"}
+    }
+  },
+  {
+    "candidateKey": "synthetic-C",
+    "facts": {
+      "firstDegree": {"value": "大专", "evidence": "合成完整教育序列：大专后升本科", "source": "synthetic", "observedAt": "2026-10-09T14:00:00+08:00"},
+      "visibleProfessionalText": {"value": "运维工程师", "evidence": "合成候选资料职业描述", "source": "synthetic", "observedAt": "2026-10-09T14:00:00+08:00"}
+    }
+  },
+  {
+    "candidateKey": "synthetic-D",
+    "facts": {
+      "firstDegree": {"value": "本科", "evidence": "合成完整教育序列", "source": "synthetic", "observedAt": "2026-10-09T14:00:00+08:00"},
+      "visibleProfessionalText": {"value": "测试工程师", "evidence": "合成候选资料职业描述", "source": "synthetic", "observedAt": "2026-10-09T14:00:00+08:00"}
+    }
+  }
+]

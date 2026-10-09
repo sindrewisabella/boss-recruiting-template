@@ -1,0 +1,8 @@
+{
+  "port": 53470,
+  "expectedAccountLabel": "替换为本人已登录招聘账号的完整菜单文本",
+  "dependencyPackage": "/path/to/boss-recruiting-template/package.json",
+  "stateDirectory": "/path/to/private/boss-framework-state",
+  "legacyLock": null,
+  "_note": "用于配置计划的占位示例；npm run setup -- --account 实际菜单文本 生成本机runtime.local.json。示例岗位ID不可真实运行。"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "boss-recruiting-template",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Role-configured BOSS recruiting workflow with receipt verification and resume collection core",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "setup": "node scripts/setup_runtime.mjs",
+    "plan": "node scripts/boss_workflow.mjs plan --authorization examples/multi-role-plan.json",
+    "test": "node --test scripts/test_framework.mjs && node scripts/test_receipt.mjs && node scripts/test_live.mjs && python3 scripts/test_matching.py"
+  },
+  "dependencies": {
+    "puppeteer-core": "25.13.0"
+  }
+}

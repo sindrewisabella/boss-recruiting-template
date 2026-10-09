@@ -1,0 +1,12 @@
+node_modules/
+runtime.local.json
+local-runs/
+private/
+*.ndjson
+*.log
+*.before-unified-reconcile.json
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*

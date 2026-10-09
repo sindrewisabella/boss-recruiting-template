@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "profileId": "ops-example",
+  "revision": "2026-10-09-example",
+  "purpose": "展示截图批次标准如何配置；不构成新的发送授权",
+  "jobBindings": [],
+  "must": [
+    {"field": "firstDegree", "operator": "equals", "value": "本科"},
+    {"field": "visibleProfessionalText", "operator": "contains_any", "value": ["运维"]}
+  ],
+  "reject": [],
+  "missingEvidence": "needs_review",
+  "greeting": {"text": "", "verifiedJobIds": []},
+  "allowedActions": []
+}

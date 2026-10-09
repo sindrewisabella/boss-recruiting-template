@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "profileId": "test-synthetic",
+  "revision": "synthetic-1",
+  "purpose": "仅用于验证换岗配置；不是用户已确认的测试招聘标准",
+  "jobBindings": [],
+  "must": [
+    {"field": "visibleProfessionalText", "operator": "contains_any", "value": ["测试"]}
+  ],
+  "reject": [],
+  "missingEvidence": "needs_review",
+  "greeting": {"text": "", "verifiedJobIds": []},
+  "allowedActions": []
+}

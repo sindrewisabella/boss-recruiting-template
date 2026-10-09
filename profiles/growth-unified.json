@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "profileId": "growth-unified",
+  "revision": "2026-10-09-role-config-v2",
+  "source": {
+    "kind": "synthetic_binding_example",
+    "note": "关键词为触达示例，岗位ID为占位符；按本人授权岗位调整"
+  },
+  "purpose": "统一三方向的关键词触达初筛，不代表完整岗位适配评估",
+  "jobBindings": [
+    {
+      "jobId": "example-growth-1",
+      "label": "增长工程师（SEO & 广告方向） _ 深圳 20-40K"
+    },
+    {
+      "jobId": "example-growth-2",
+      "label": "增长工程师（SEO / pSEO / SEO Agent） _ 厦门 20-30K"
+    }
+  ],
+  "must": [
+    {
+      "field": "visibleProfessionalText",
+      "operator": "contains_any",
+      "value": [
+        "SEO",
+        "pSEO",
+        "搜索引擎优化",
+        "CMS",
+        "网页抓取",
+        "爬虫",
+        "规模化页面生成",
+        "广告数据",
+        "归因",
+        "转化回传",
+        "营销技术",
+        "营销自动化",
+        "Growth Engineer",
+        "增长工程师",
+        "增长开发",
+        "增长研发",
+        "用户激活",
+        "会员订阅",
+        "付费转化",
+        "A/B",
+        "AB测试",
+        "商业化研发",
+        "接口同步",
+        "数据同步",
+        "任务调度",
+        "Agent",
+        "智能体",
+        "大模型",
+        "LLM",
+        "LangGraph",
+        "LangChain",
+        "RAG",
+        "MCP"
+      ]
+    }
+  ],
+  "reject": [],
+  "missingEvidence": "needs_review",
+  "discovery": {
+    "keywords": [
+      "SEO",
+      "pSEO",
+      "搜索引擎优化",
+      "CMS",
+      "网页抓取",
+      "爬虫",
+      "规模化页面生成",
+      "广告数据",
+      "归因",
+      "转化回传",
+      "营销技术",
+      "营销自动化",
+      "Growth Engineer",
+      "增长工程师",
+      "增长开发",
+      "增长研发",
+      "用户激活",
+      "会员订阅",
+      "付费转化",
+      "A/B",
+      "AB测试",
+      "商业化研发",
+      "接口同步",
+      "数据同步",
+      "任务调度",
+      "Agent",
+      "智能体",
+      "大模型",
+      "LLM",
+      "LangGraph",
+      "LangChain",
+      "RAG",
+      "MCP"
+    ],
+    "companiesArePriorityOnly": true
+  },
+  "laterReview": [
+    "学历与相关开发经验",
+    "本人贡献与独立交付",
+    "真实大模型或智能体项目",
+    "深圳／厦门到岗意愿"
+  ],
+  "greeting": {
+    "text": "",
+    "verifiedJobIds": []
+  },
+  "allowedActions": [
+    "read",
+    "select_job",
+    "preview"
+  ],
+  "notes": [
+    "示例触达规则：三个画像统一，命中相关关键词即可进入打招呼名单；仅作关键词触达初筛",
+    "AI、开发、全栈、后端这些过宽的单独词不纳入触达关键词；公司名仅是寻访线索",
+    "含关键词可能是描述或否定，不代表真实技能；这里只输出触达线索",
+    "本配置不构成任何动作的授权；实际操作由本轮动作配置及 --execute 决定"
+  ]
+}

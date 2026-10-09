@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "runId": "set-new-run-id",
+  "runDirectory": "../local-runs/set-new-run-id",
+  "runtimeFile": "../runtime.example.json",
+  "businessDate": null,
+  "actions": [
+    "greet",
+    "request",
+    "accept"
+  ],
+  "budgets": {
+    "greet": 1,
+    "request": 5,
+    "accept": 5
+  },
+  "greeting": "你好，请问最近有考虑新的工作机会么？",
+  "firstGreetingVerified": false,
+  "resumeScope": {
+    "mode": "all_history"
+  },
+  "approval": {
+    "source": "",
+    "actions": [],
+    "allHistory": false
+  },
+  "controls": {
+    "batchSize": 5,
+    "betweenActionsMs": 10000,
+    "batchPauseMs": 120000,
+    "maxScan": 1000,
+    "maxListItems": 10000,
+    "maxLoadPasses": 400,
+    "maxHistoryLoads": 150,
+    "maxConversations": 1000,
+    "maxAcceptPasses": 3
+  },
+  "profiles": [
+    "../profiles/growth-unified.json"
+  ]
+}

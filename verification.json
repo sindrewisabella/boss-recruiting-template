@@ -1,0 +1,30 @@
+{
+  "templateVersion": "2.0.0",
+  "date": "2026-10-09",
+  "frameworkBehaviorTests": {
+    "passed": 19,
+    "failed": 0,
+    "method": "local fake adapters; no browser"
+  },
+  "matchingTests": {
+    "passed": 9,
+    "failed": 0,
+    "method": "synthetic candidate facts"
+  },
+  "receiptAndIdentityRegression": "passed",
+  "examplePlanJobs": 8,
+  "currentVersionLiveVerified": false,
+  "resumeLiveVerified": false,
+  "platformActionsDuringPublication": 0,
+  "notes": [
+    "GitHub发布版岗位ID和连接路径均为占位符",
+    "个人实测日志不在仓库内",
+    "旧版本单次招呼实测不代表本版本全部岗位及简历流程已实测",
+    "不能保证长期不封号"
+  ],
+  "releaseDependency": {
+    "puppeteerCore": "25.13.0",
+    "moduleLoadVerified": true,
+    "note": "发布版升级；未使用新依赖连接BOSS"
+  }
+}

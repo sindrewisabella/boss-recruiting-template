@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "profileId": "ops-reusable",
+  "revision": "2026-10-09-role-config-v2",
+  "purpose": "历史运维规则独立配置；不授权新的发送",
+  "jobBindings": [
+    {
+      "jobId": "example-ops-1",
+      "label": "运维工程师（外包） _ 深圳 13-26K"
+    },
+    {
+      "jobId": "example-ops-2",
+      "label": "运维工程师（外包） _ 深圳 13-26K"
+    },
+    {
+      "jobId": "example-ops-3",
+      "label": "运维工程师（外包） _ 厦门 13-26K"
+    },
+    {
+      "jobId": "example-ops-4",
+      "label": "运维工程师（外包）-厦门 _ 厦门 13-26K"
+    },
+    {
+      "jobId": "example-ops-5",
+      "label": "运维工程师（外包） _ 深圳 13-26K"
+    },
+    {
+      "jobId": "example-ops-6",
+      "label": "运维工程师（外包） _ 深圳 13-26K"
+    }
+  ],
+  "must": [
+    {
+      "field": "firstDegree",
+      "operator": "equals",
+      "value": "本科"
+    },
+    {
+      "field": "visibleProfessionalText",
+      "operator": "contains_any",
+      "value": [
+        "运维"
+      ]
+    }
+  ],
+  "reject": [],
+  "missingEvidence": "needs_review",
+  "greeting": {
+    "text": "",
+    "verifiedJobIds": []
+  },
+  "allowedActions": [],
+  "notes": [
+    "全部岗位 ID 为示例占位符；真实运行需读取并替换为当前岗位 ID 与标签",
+    "第一学历本科不能从最高学历本科推断；卡片缺证据时待复核",
+    "简历阶段按授权会话和岗位 ID 处理，不重新套用增长筛选规则"
+  ]
+}

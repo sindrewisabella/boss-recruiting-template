@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "screeningProfile": "growth-unified.json",
+  "jobBindings": [
+    {
+      "jobId": "example-growth-2",
+      "label": "增长工程师（SEO / pSEO / SEO Agent） _ 厦门 20-30K"
+    }
+  ]
+}
