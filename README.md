@@ -72,3 +72,10 @@ npm run setup -- --account "实际招聘账号的完整菜单文本"
 详细说明：[技能入口](SKILL.md) · [换岗配置](references/multirole.md) · [求／收简历](references/live-resumes.md) · [发送核验](references/live-greet.md) · [验证范围](verification.json)。
 
 将整个仓库目录作为 `boss-recruiting-template` 放入本机 Codex skills 目录，即可作为可复用技能使用。
+
+## 开源许可与同系列工具
+
+本仓库框架代码采用 MIT 许可，见 [LICENSE](LICENSE)。外部依赖继续遵循各自许可；本项目沿用同事基础方案并完成岗位配置化、去重、对账与阶段拆分，不将所有底层能力声称为从零原创。
+
+- [脉脉招聘 CLI](https://github.com/sindrewisabella/maimai-recruiting-cli)：搜索、证据审阅、预检和授权批次核心。
+- [BOSS Mac 桌面 CLI](https://github.com/sindrewisabella/boss-desktop-cli)：独立客户端适配，当前简历写入未验收。
